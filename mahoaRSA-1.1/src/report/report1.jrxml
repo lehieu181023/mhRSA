@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7656f5f5-ee9f-4a21-bebb-c2bf6b731b97">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM BangPT ORDER BY ma DESC OFFSET 0 ROWS FETCH NEXT 1 ROW ONLY;]]>
+	</queryString>
+	<field name="nk" class="java.lang.String"/>
+	<field name="nn" class="java.lang.String"/>
+	<field name="dc" class="java.lang.String"/>
+	<field name="ld" class="java.lang.String"/>
+	<field name="st" class="java.lang.Double"/>
+	<field name="ng" class="java.lang.String"/>
+	<field name="n" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="bfd02a6f-e280-42aa-9fc1-3600fa93698a"/>
+				<textElement>
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Công ty Zico]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="100" height="20" uuid="dd369189-d4bc-4148-a358-eb7d20156a6b"/>
+				<text><![CDATA[DC: Mặt Trăng]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="229" y="0" width="119" height="35" uuid="2a0c76b9-54ae-4c63-91fa-e8c06d79ed7d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PHIẾU THU]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="278" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="19" width="119" height="20" uuid="940054b7-1731-4814-8ad2-54dd55db3d94"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Họ tên người nhận tiền:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="119" y="19" width="100" height="20" uuid="8997ef25-1105-4fe8-8b4e-dc76b41ea893"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nn}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="39" width="43" height="20" uuid="2a3b95c8-1cb9-4d19-b910-332145b0772f"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Địa chỉ :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="43" y="39" width="100" height="20" uuid="9b5e988c-537f-407f-9cd6-29795844a018"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{dc}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="59" width="33" height="20" uuid="7526ef3d-04bc-479e-982e-382859564ab0"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Lí Do :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="33" y="59" width="100" height="20" uuid="19b03f75-0e4f-4e6f-98dd-930b045f45c4"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{ld}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="79" width="43" height="20" uuid="cac9e087-e15e-4743-b5ee-b6a4a9389d46"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Số tiền :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="43" y="79" width="90" height="20" uuid="4e36dbe4-9ec3-4f61-a8a8-1a9b1d98bfc3"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{st} ]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="162" width="100" height="20" uuid="f787446f-0104-48ee-9c42-167334174c6c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Giám đốc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="162" width="100" height="20" uuid="4b3fac34-7fd0-4d1e-8d8b-2ceaf7aa26bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Kế toán trưởng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="162" width="100" height="20" uuid="7fc9afe7-a949-491e-ad7b-cbad31bd9c95"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Thủ quỹ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="162" width="100" height="20" uuid="240d779a-bed1-417f-a94f-8907be1bc450"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Người lập phiếu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="162" width="100" height="20" uuid="009a0e10-b59d-44e8-a12b-c1b892522054"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Người nhận tiền]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="142" width="215" height="20" uuid="3d5ab59e-f51d-49e5-ad8d-e0399d037ba2"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Ngày.........Tháng..........Năm........]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="182" width="100" height="14" uuid="47bd69b2-e137-4731-a406-76ccd68f8b4e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[(Ký tênvà đóng dấu)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="182" width="100" height="14" uuid="b4a9191f-d107-4794-bc2f-0246c81afce9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[(Ký họ, tên)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="182" width="100" height="14" uuid="e89a25f7-b01e-4958-a611-dcc783f8dab5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[(Ký họ, tên)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="182" width="100" height="14" uuid="19342dc2-187f-49c9-95f5-c324be95559c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[(Ký họ, tên)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="182" width="100" height="14" uuid="24a1c3c7-22d4-400a-9693-093009c8ce08"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[(Ký họ, tên)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="133" y="79" width="28" height="20" uuid="64ecc5cd-8ad1-4560-b9af-a6da09e8e46c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[VND]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="202" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="147" height="31" uuid="83291fd0-5602-48d8-b4fc-6fbb4417554d"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CÔNG TY ZICO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="31" width="76" height="20" uuid="a4055da1-9751-4ff8-b49c-caf8ebbcd8ad"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[Người ký:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="51" width="76" height="20" uuid="05f7ea96-19bf-42ce-9085-e0d61151233e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[Ngày giờ ký:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="76" y="31" width="100" height="20" uuid="7bf4c48e-bd3d-41dd-ac62-e75798e66078"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="76" y="51" width="100" height="20" uuid="5f369bd8-f479-4c1d-b136-283d0f094536"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{ng}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="71" width="19" height="20" uuid="a1b3e875-51f9-48bc-ad48-fa3364ff91bb"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[N:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="19" y="71" width="100" height="20" uuid="746f6a23-aaba-4863-9336-e60523d66768"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{n}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
